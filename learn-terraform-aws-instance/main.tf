@@ -1,4 +1,10 @@
 terraform {
+  cloud {
+    organization = "DronTeam-HW19"
+    workspaces {
+      name = "learn-tfc-aws"
+    }
+  }
   required_providers {
     aws = {
       source  = "hashicorp/aws"
